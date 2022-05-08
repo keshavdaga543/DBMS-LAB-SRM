@@ -1,0 +1,16 @@
+CREATE TABLE emp(
+empno NUMBER,
+empname VARCHAR(255),
+DOB DATE,
+salary NUMBER,
+designation VARCCHAR(20));
+
+INSERT INTO emp VALUES (1,'Keshav','22.11.2001',2600000,'Software Developer');
+
+SELECT * FROM emp;
+
+UPDATE emp SET salary = salary + 100000; 
+SELECT * FROM emp;
+
+DELETE from emp where empno=1;
+SELECT * FROM emp;
